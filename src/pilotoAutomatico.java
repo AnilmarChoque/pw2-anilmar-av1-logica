@@ -1,11 +1,20 @@
+import java.util.Scanner;
 
 public class pilotoAutomatico {
+	
 	public static void main(String[] args) {
-		int y = 15;
-		int x = 10;
-		int z = 5;
+		Scanner ler = new Scanner(System.in);
 		int disA;
 		int disB;
+		System.out.println("Informe a posição do veiculo Y: ");
+		int y = ler.nextInt();
+		
+		System.out.println("Informe a posição do veiculo X: ");
+		int x = ler.nextInt();
+		
+		System.out.println("Informe a posição do veiculo Z: ");
+		int z = ler.nextInt();
+
 		
 		disA = y - x;
 		disB = z - y;
@@ -24,5 +33,5 @@ public class pilotoAutomatico {
 		}
 		
 	}
-
+	
 }
